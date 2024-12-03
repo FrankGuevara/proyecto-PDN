@@ -1,3 +1,7 @@
+'use client';
+
+import { redirect } from 'next/navigation'
+import { FormEvent } from 'react'
 import { FaGoogle } from "react-icons/fa";
 import { TfiFacebook } from "react-icons/tfi";
 import { IoLogoMicrosoft } from "react-icons/io5";
@@ -12,6 +16,13 @@ const SocialIcons = () => (
 );
 
 const Login = () => {
+
+    function onSubmitForm(e: FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        
+        redirect('/dashboard')
+    }
+
     return (
         <main className="grid grid-cols-2">
             <section className="h-[100vh] bg-blue-900 flex justify-center items-center">
@@ -21,7 +32,7 @@ const Login = () => {
                         Ingrese con sus credenciales.
                     </p>
 
-                    <form className="w-full text-left">
+                    <form className="w-full text-left" onSubmit={onSubmitForm}>
                         <div className="mb-8">
                             <label className="mb-2 block text-white font-semibold" htmlFor="email">
                                 Correo Electrónico:
@@ -86,7 +97,7 @@ const Login = () => {
                         ¡Bienvenido de nuevo!
                     </p>
                 </div>
-                
+
 
             </section>
         </main>
