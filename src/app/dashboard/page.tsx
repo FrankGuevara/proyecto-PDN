@@ -173,56 +173,56 @@ const Dashboard = () => {
                                                     <img src="https://randomuser.me/api/portraits/women/82.jpg" alt="Annette Watson profile picture" />
                                                 </div>
                                                 <span className="text-gray-600">Annette Watson</span>
-                                                <span className="ml-auto font-semibold">9.3</span>
+                                                <span className="ml-auto font-semibold">8</span>
                                             </li>
                                             <li className="flex items-center">
                                                 <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
                                                     <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="Calvin Steward profile picture" />
                                                 </div>
                                                 <span className="text-gray-600">Calvin Steward</span>
-                                                <span className="ml-auto font-semibold">8.9</span>
+                                                <span className="ml-auto font-semibold">7</span>
                                             </li>
                                             <li className="flex items-center">
                                                 <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
                                                     <img src="https://randomuser.me/api/portraits/men/80.jpg" alt="Ralph Richards profile picture" />
                                                 </div>
                                                 <span className="text-gray-600">Ralph Richards</span>
-                                                <span className="ml-auto font-semibold">8.7</span>
+                                                <span className="ml-auto font-semibold">6</span>
                                             </li>
                                             <li className="flex items-center">
                                                 <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
                                                     <img src="https://randomuser.me/api/portraits/men/79.jpg" alt="Bernard Murphy profile picture" />
                                                 </div>
                                                 <span className="text-gray-600">Bernard Murphy</span>
-                                                <span className="ml-auto font-semibold">8.2</span>
+                                                <span className="ml-auto font-semibold">5</span>
                                             </li>
                                             <li className="flex items-center">
                                                 <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
                                                     <img src="https://randomuser.me/api/portraits/women/78.jpg" alt="Arlene Robertson profile picture" />
                                                 </div>
                                                 <span className="text-gray-600">Arlene Robertson</span>
-                                                <span className="ml-auto font-semibold">8.2</span>
+                                                <span className="ml-auto font-semibold">4</span>
                                             </li>
                                             <li className="flex items-center">
                                                 <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
                                                     <img src="https://randomuser.me/api/portraits/women/77.jpg" alt="Jane Lane profile picture" />
                                                 </div>
                                                 <span className="text-gray-600">Jane Lane</span>
-                                                <span className="ml-auto font-semibold">8.1</span>
+                                                <span className="ml-auto font-semibold">3</span>
                                             </li>
                                             <li className="flex items-center">
                                                 <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
                                                     <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Pat Mckinney profile picture" />
                                                 </div>
                                                 <span className="text-gray-600">Pat Mckinney</span>
-                                                <span className="ml-auto font-semibold">7.9</span>
+                                                <span className="ml-auto font-semibold">2</span>
                                             </li>
                                             <li className="flex items-center">
                                                 <div className="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
                                                     <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Norman Walters profile picture" />
                                                 </div>
                                                 <span className="text-gray-600">Norman Walters</span>
-                                                <span className="ml-auto font-semibold">7.7</span>
+                                                <span className="ml-auto font-semibold">1</span>
                                             </li>
                                         </ul>
                                     </div>
