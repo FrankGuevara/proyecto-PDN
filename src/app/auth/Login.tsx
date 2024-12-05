@@ -1,7 +1,7 @@
 'use client';
 
-import { redirect } from 'next/navigation'
-import { FormEvent } from 'react'
+import { useState, FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
 import { FaGoogle } from "react-icons/fa";
 import { TfiFacebook } from "react-icons/tfi";
 import { IoLogoMicrosoft } from "react-icons/io5";
@@ -16,11 +16,22 @@ const SocialIcons = () => (
 );
 
 const Login = () => {
-
+    const [errorMessage, setErrorMessage] = useState('');
+    const router = useRouter();
     function onSubmitForm(e: FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        
-        redirect('/dashboard')
+
+        const formData = new FormData(e.currentTarget);
+        const email = formData.get('email') as string;
+        const password = formData.get('password') as string;
+
+        // Validar las credenciales
+        if (email === 'test@gmail.com' && password === 'test') {
+           
+            router.push('/dashboard');
+        } else {
+            setErrorMessage('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
+        }
     }
 
     return (
@@ -61,6 +72,10 @@ const Login = () => {
                             />
                         </div>
 
+                        {errorMessage && (
+                            <p className="text-white font-semibold text-sm mb-4">{errorMessage}</p>
+                        )}
+
                         <div className="mb-8 flex items-center">
                             <input
                                 type="checkbox"
@@ -89,16 +104,13 @@ const Login = () => {
                 </div>
             </section>
 
-
-            <section className="bg-gray flex  w-full items-center justify-center tex">
-                <div className="">
+            <section className="bg-gray flex w-full items-center justify-center">
+                <div>
                     <Image className="block" src="/images/login-img.jpg" alt="Logo" width={600} height={400} />
                     <p className="text-blue-900 font-bold text-2xl block text-center">
                         ¡Bienvenido de nuevo!
                     </p>
                 </div>
-
-
             </section>
         </main>
     );
